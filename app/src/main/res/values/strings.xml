@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TODO</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="register">REGISTER</string>
+    <string name="password">Password</string>
+    <string name="Register">SIGNUP</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="login">Login</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="facebook_app_id">640796533252734</string>
+    <string name="fb_login_protocol_scheme">fb640796533252734</string>
+    <string name="don_t_have_an_account_register_here">Don\'t have an account?Register here!</string>
+    <string name="dont_have_an_account_register_here">Dont have an account? Register here!</string>
+    <string name="login_using_facebook" />
+    <string name="TextView">TextView</string>
+
+</resources>
