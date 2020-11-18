@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "659995288489",
-    "firebase_url": "https://doit-c96db.firebaseio.com",
-    "project_id": "doit-c96db",
-    "storage_bucket": "doit-c96db.appspot.com"
+    "project_number": "572223297678",
+    "firebase_url": "https://doit-1605538396004.firebaseio.com",
+    "project_id": "doit-1605538396004",
+    "storage_bucket": "doit-1605538396004.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:659995288489:android:94ee87e02ddf873c929ab8",
+        "mobilesdk_app_id": "1:572223297678:android:feacc2442777679dae11df",
         "android_client_info": {
-          "package_name": "com.example.todo"
+          "package_name": "com.example.Doit"
         }
       },
       "oauth_client": [
         {
-          "client_id": "659995288489-hr0d8vm7f3m6peo14v7m7hm1merqbc4d.apps.googleusercontent.com",
+          "client_id": "572223297678-pliedbg4ihaekdd14cc4bg0fi7t96fri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.Doit",
+            "certificate_hash": "4c3aec2d5d5ba32dea5c8b39580a61b9ab519b14"
+          }
+        },
+        {
+          "client_id": "572223297678-omj15tssqi2nimglc1s0sbnkoee801k1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDk5BNaNfs1HTdt4i5lDGA39Whicvi_GWM"
+          "current_key": "AIzaSyA-8R6FQ0C4Va1-s9oYGWUMrl4615Ring0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "659995288489-hr0d8vm7f3m6peo14v7m7hm1merqbc4d.apps.googleusercontent.com",
+              "client_id": "572223297678-omj15tssqi2nimglc1s0sbnkoee801k1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
