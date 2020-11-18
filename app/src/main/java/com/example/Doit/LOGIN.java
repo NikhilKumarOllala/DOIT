@@ -78,7 +78,7 @@ public class LOGIN extends AppCompatActivity implements View.OnClickListener{
 // for the requestIdToken, use getString(R.string.default_web_client_id), this is in the values.xml file that
                 // is generated from your google-services.json file (data from your firebase project), uses the google-sign-in method
                 // web api key
-                .requestIdToken("659995288489-ri5vphf1ttenaf2vgl6k3t1inlvnim8j.apps.googleusercontent.com")//Default_web_client_id will be matched with the
+                .requestIdToken(getString(R.string.default_web_client_id))//Default_web_client_id will be matched with the
                 .requestEmail()
                 .build();
 
