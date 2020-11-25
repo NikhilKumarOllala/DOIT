@@ -9,30 +9,31 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Employee extends AppCompatActivity {
+public class calender extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_employee);
-
-        BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        setContentView(R.layout.activity_calender);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.calender);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
+                switch (menuItem.getItemId()) {
                     case R.id.Tasks:
-                        startActivity(new Intent(getApplicationContext(),tasks.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), tasks.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.calender:
-                        startActivity(new Intent(getApplicationContext(),calender.class));
-                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.home:
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.settings:
-                        startActivity(new Intent(getApplicationContext(),settings.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), settings.class));
+                        overridePendingTransition(0, 0);
                         return true;
 
                 }
