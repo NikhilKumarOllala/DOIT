@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TODO">
-        <activity android:name=".settings"></activity>
+        <activity android:name=".NoteEditorActivity"></activity>
+        <activity android:name=".note" />
+        <activity android:name=".event" />
+        <activity android:name=".settings" />
         <activity android:name=".calender" />
         <activity android:name=".tasks" />
         <activity android:name=".Employee" />

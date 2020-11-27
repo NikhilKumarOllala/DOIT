@@ -6,13 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".tasks">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="tasks"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"/>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
@@ -23,4 +17,157 @@
         app:itemIconTint="@drawable/selector"
         app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"/>
+
+
+<GridLayout
+    android:layout_width="393dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="5dp"
+    android:columnCount="1"
+    android:columnOrderPreserved="false"
+    android:rowCount="2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:onClick = "event">
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="Add an Event"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+      >
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="Add a Reminder"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:onClick="notes"
+            >
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="Notes"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            >
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="Groceries"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            >
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="Bills"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
+</GridLayout>
+
+
 </RelativeLayout>
