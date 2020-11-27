@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TODO">
-        <activity android:name=".NoteEditorActivity"></activity>
+        <activity android:name=".verifyprofile"></activity>
+        <activity android:name=".editprofile" />
+        <activity android:name=".NoteEditorActivity" />
         <activity android:name=".note" />
         <activity android:name=".event" />
         <activity android:name=".settings" />

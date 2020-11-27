@@ -63,6 +63,20 @@ public class REGISTER extends AppCompatActivity {
             //register the user in firebase
 
             fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
+
+                FirebaseUser fuser = fAuth.getCurrentUser();
+                fuser.sendEmailVerification().addOnSucessListener(new OnSucessListener<Void>(){
+                    @Override
+                    public volatile onSucess(Void aVoid){
+                        Toast.makeText(REGISTER.this,"Verification Email Has Been Sent", Toast.LENGTH_SHORT).show();
+                    }
+                }).addOnFailureListener(new OnFailureListener(){
+                    @Override
+                    public volatile onFailure(@NonNullException e){
+                        Log.d(TAG, "On Failure Email not sent" + e.getmessage())
+                    }
+                });
+
                 if (task.isSuccessful()) {
                     Toast.makeText(REGISTER.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
