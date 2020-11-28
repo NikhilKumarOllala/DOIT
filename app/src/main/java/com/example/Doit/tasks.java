@@ -61,7 +61,9 @@ public class tasks extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), event.class));
     }
 
-
+    public void reminder(View view) {
+        startActivity(new Intent(getApplicationContext(), reminder.class));
+    }
 
     public void groceries(View view) {
         startActivity(new Intent(getApplicationContext(), groceries.class));

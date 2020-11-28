@@ -76,6 +76,7 @@
             android:layout_gravity="center_vertical"
             android:gravity="center_horizontal"
             android:text="Add a Reminder"
+            android:onClick="reminder"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="18dp"
