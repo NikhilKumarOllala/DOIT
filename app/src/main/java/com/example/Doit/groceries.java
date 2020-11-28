@@ -42,7 +42,7 @@ public class groceries extends AppCompatActivity {
 
 
     public void insertItem(int position) {
-        mExampleList.add(position, new ExampleItem(R.drawable.ic_l_grocery, "Item Name", "quantity"));
+        mExampleList.add(position, new ExampleItem(R.drawable.ic_l_grocery, "", ""));
         mAdapter.notifyItemInserted(position);
     }
     public void removeItem(int position) {
@@ -56,7 +56,7 @@ public class groceries extends AppCompatActivity {
     }
     public void createExampleList() {
         mExampleList = new ArrayList<>();
-        mExampleList.add(new ExampleItem(R.drawable.ic_l_grocery, "Item Name", "Quantity"));
+        mExampleList.add(new ExampleItem(R.drawable.ic_l_grocery, "", ""));
     }
     public void buildRecyclerView() {
         mRecyclerView = findViewById(R.id.recyclerView);

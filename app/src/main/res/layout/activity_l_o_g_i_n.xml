@@ -34,8 +34,8 @@
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        android:textColor="#174950"
-        android:textColorHint="#174950"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,8 +49,8 @@
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:textColor="#174950"
-        android:textColorHint="#174950"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,15 +98,15 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/registerText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn"
-        app:layout_constraintVertical_bias="0.628" />
+        app:layout_constraintVertical_bias="0.529" />
 
     <TextView
         android:id="@+id/fbText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="2dp"
+        android:layout_height="1dp"
         android:text="@string/TextView"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/registerText"
@@ -118,12 +118,13 @@
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/gsignin"
-        android:layout_width="295dp"
-        android:layout_height="38dp"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toTopOf="@+id/registerText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_button"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
