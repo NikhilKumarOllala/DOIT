@@ -18,12 +18,14 @@
         app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"/>
 
-
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <GridLayout
     android:layout_width="393dp"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
-    android:layout_margin="5dp"
+    android:layout_margin="1dp"
     android:columnCount="1"
     android:columnOrderPreserved="false"
     android:rowCount="2">
@@ -33,8 +35,7 @@
         android:layout_height="100dp"
         app:cardBackgroundColor="@color/gray"
         app:cardCornerRadius="12dp"
-        android:layout_margin="10dp"
-        app:cardElevation="5dp">
+        app:cardElevation="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,18 +56,19 @@
             ></TextView>
     </androidx.cardview.widget.CardView>
 
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:cardBackgroundColor="@color/gray"
         app:cardCornerRadius="12dp"
-        android:layout_margin="10dp"
+
         app:cardElevation="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="145dp"
-      >
+            >
 
 
         </LinearLayout>
@@ -82,20 +84,21 @@
             android:textSize="18dp"
             ></TextView>
     </androidx.cardview.widget.CardView>
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:cardBackgroundColor="@color/gray"
         app:cardCornerRadius="12dp"
-        android:layout_margin="10dp"
         app:cardElevation="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="145dp"
-            android:onClick="notes"
-            >
+           android:onClick="notes"
+      >
+
+
+
 
 
         </LinearLayout>
@@ -117,12 +120,12 @@
         android:layout_height="100dp"
         app:cardBackgroundColor="@color/gray"
         app:cardCornerRadius="12dp"
-        android:layout_margin="10dp"
         app:cardElevation="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="145dp"
+            android:onClick="groceries"
             >
 
 
@@ -148,12 +151,12 @@
         android:layout_height="100dp"
         app:cardBackgroundColor="@color/gray"
         app:cardCornerRadius="12dp"
-        android:layout_margin="10dp"
         app:cardElevation="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="145dp"
+            android:onClick="bill"
             >
 
 
@@ -169,8 +172,34 @@
             android:textSize="18dp"
             ></TextView>
     </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            >
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="others"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
 
 </GridLayout>
-
+</androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>

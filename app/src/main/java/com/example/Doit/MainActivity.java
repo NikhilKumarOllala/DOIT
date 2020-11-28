@@ -20,4 +20,13 @@ public class MainActivity extends AppCompatActivity {
     public void employee(View view) {
         startActivity(new Intent(getApplicationContext(), Employee.class));
     }
+    public void student(View view) {
+        startActivity(new Intent(getApplicationContext(), Employee.class));
+    }
+    public void homemaker(View view) {
+        startActivity(new Intent(getApplicationContext(), Employee.class));
+    }
+    public void others(View view) {
+        startActivity(new Intent(getApplicationContext(), Employee.class));
+    }
 }

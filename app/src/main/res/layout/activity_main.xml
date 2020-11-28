@@ -5,7 +5,6 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-     android:background="@color/black"
     tools:context=".MainActivity">
 
    <LinearLayout
@@ -15,9 +14,9 @@
 
        <TextView
            android:layout_width="match_parent"
-           android:layout_height="40dp"
+           android:layout_height="wrap_content"
           android:layout_marginHorizontal="30dp"
-
+           android:padding="4dp"
            android:layout_marginTop="20dp"
            android:layout_marginBottom="20dp"
            android:background="@color/gray"
@@ -86,6 +85,7 @@
 
                <LinearLayout
                    android:layout_width="match_parent"
+                   android:onClick="homemaker"
                    android:layout_height="145dp">
 
                    <ImageView
@@ -93,7 +93,7 @@
                        android:layout_width="wrap_content"
                        android:layout_height="75dp"
                        android:layout_margin="30dp"
-
+                       android:onClick="homemaker"
                        app:srcCompat="@drawable/housekeeping" />
 
 
@@ -123,6 +123,7 @@
 
                <LinearLayout
                    android:layout_width="match_parent"
+                   android:onClick="student"
                    android:layout_height="145dp">
 
                    <ImageView
@@ -130,7 +131,7 @@
                        android:layout_width="wrap_content"
                        android:layout_height="75dp"
                        android:layout_margin="30dp"
-
+                       android:onClick="student"
                        app:srcCompat="@drawable/reading" />
 
 
@@ -148,42 +149,7 @@
 
            </androidx.cardview.widget.CardView>
 
-           <androidx.cardview.widget.CardView
-               android:layout_width="match_parent"
-               android:layout_height="145dp"
-               android:layout_marginLeft="80dp"
-               android:layout_marginRight="80dp"
-               app:cardBackgroundColor="@color/gray"
-               app:cardCornerRadius="12dp"
-               android:layout_marginBottom="15dp"
-               app:cardElevation="5dp">
 
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="140dp">
-
-                   <ImageView
-                       android:id="@+id/player"
-                       android:layout_width="wrap_content"
-                       android:layout_height="75dp"
-                       android:layout_margin="30dp"
-
-                       app:srcCompat="@drawable/soccer" />
-
-
-               </LinearLayout>
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="30dp"
-                   android:layout_marginTop="110dp"
-                   android:gravity="center_horizontal"
-                   android:text="Sports PLayer"
-                   android:textStyle="bold"
-                   android:textColor="@color/white"
-                   android:textSize="18dp"
-                   ></TextView>
-
-           </androidx.cardview.widget.CardView>
            <androidx.cardview.widget.CardView
                android:layout_width="match_parent"
                android:layout_height="145dp"
@@ -196,6 +162,7 @@
 
                <LinearLayout
                    android:layout_width="match_parent"
+                   android:onClick="others"
                    android:layout_height="145dp">
 
                    <ImageView
@@ -203,7 +170,7 @@
                        android:layout_width="wrap_content"
                        android:layout_height="75dp"
                        android:layout_margin="30dp"
-
+                       android:onClick="others"
                        app:srcCompat="@drawable/others" />
                </LinearLayout>
                <TextView
