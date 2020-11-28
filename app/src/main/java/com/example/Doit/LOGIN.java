@@ -184,7 +184,7 @@ public void loginButtonActivity(View view) {
         if(myUserObj != null)
              t2.setText(myUserObj.getDisplayName());
          else
-             t2.setText("");
+             t2.setText(" ");
     }
 
     //gmail sign-in

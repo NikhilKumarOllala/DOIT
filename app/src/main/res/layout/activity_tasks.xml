@@ -127,6 +127,7 @@
 
         </LinearLayout>
         <TextView
+            android:id="@+id/groceries"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
@@ -135,6 +136,7 @@
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="18dp"
+            android:onClick="groceries"
             ></TextView>
     </androidx.cardview.widget.CardView>
 

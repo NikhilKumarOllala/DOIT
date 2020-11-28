@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.Doit">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,14 +13,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TODO">
-        <activity android:name=".NoteEditorActivity"></activity>
+        <activity android:name=".Bill"></activity>
+        <activity android:name=".editprofile" />
+        <activity
+            android:name=".ExampleItem"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".groceries" />
+        <activity android:name=".otp_phone" />
+        <activity android:name=".REGISTER" />
+        <activity android:name=".NoteEditorActivity" />
         <activity android:name=".note" />
         <activity android:name=".event" />
         <activity android:name=".settings" />
         <activity android:name=".calender" />
         <activity android:name=".tasks" />
         <activity android:name=".Employee" />
-        <activity android:name=".REGISTER" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LOGIN">
             <intent-filter>

@@ -1,10 +1,12 @@
 package com.example.Doit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,7 +14,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class REGISTER extends AppCompatActivity {
 
@@ -64,8 +69,7 @@ public class REGISTER extends AppCompatActivity {
 
             fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
-                    Toast.makeText(REGISTER.this, "Registered successfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    startActivity(new Intent(getApplicationContext(), otp_phone.class));
                 } else {
                     Toast.makeText(REGISTER.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
@@ -74,14 +78,12 @@ public class REGISTER extends AppCompatActivity {
 
         });
 
-        mLoginBtn.setOnClickListener(v -> {
-            startActivity(new Intent(getApplicationContext(), LOGIN.class));
 
-        });
+
+        mLoginBtn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), LOGIN.class)));
 
     }
 }
-
 
 
 
