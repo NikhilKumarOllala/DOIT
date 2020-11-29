@@ -8,9 +8,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
-class AlarmReceiver extends BroadcastReceiver {
+class AlarmReceiver extends  BroadcastReceiver  {
 
     private static final String CHANNEL_ID = "CHANNEL_SAMPLE";
 

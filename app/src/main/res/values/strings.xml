@@ -29,6 +29,14 @@
     <string name="title_activity_note">Note</string>
     <string name="item_name">Item Name</string>
     <string name="quantity">quantity</string>
+    <string name="remove_user" />
+    <string name="btn_sign_out" />
+    <string name="send_password_reset_email" />
+    <string name="change_password" />
+    <string name="change_email" />
+    <string name="btn_send" />
+    <string name="btn_change" />
+    <string name="btn_remove" />
 
 
 </resources>

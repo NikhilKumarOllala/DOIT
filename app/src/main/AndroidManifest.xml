@@ -13,11 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TODO">
-        <activity android:name=".AlarmReceiver"></activity>
+        <activity android:name=".activityprofile" />
+        <activity android:name=".othertasks" />
+        <activity android:name=".AlarmReceiver"
+            tools:ignore="Instantiatable" />
         <activity android:name=".reminder" />
-        <activity android:name=".alarmactivity" />
         <activity android:name=".Bill" />
-        <activity android:name=".editprofile" />
         <activity
             android:name=".ExampleItem"
             tools:ignore="Instantiatable" />
@@ -39,7 +40,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-          <receiver android:name="AlarmReceiver"/>
+
+        <receiver android:name=".AlarmReceiver" />
+
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />

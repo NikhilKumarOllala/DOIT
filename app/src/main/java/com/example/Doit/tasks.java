@@ -77,7 +77,9 @@ public class tasks extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), Bill.class));
     }
 
-
+    public void othertasks(View view) {
+        startActivity(new Intent(getApplicationContext(), othertasks.class));
+    }
 }
 
 

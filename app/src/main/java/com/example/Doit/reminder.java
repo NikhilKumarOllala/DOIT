@@ -36,7 +36,7 @@ public class reminder extends AppCompatActivity implements View.OnClickListener 
         TimePicker timePicker = findViewById(R.id.timePicker);
 
         // Intent
-        Intent intent = new Intent(reminder.this, com.example.Doit.AlarmReceiver.class);
+        Intent intent = new Intent(reminder.this, AlarmReceiver.class);
         intent.putExtra("notificationId", notificationId);
         intent.putExtra("message", editText.getText().toString());
 

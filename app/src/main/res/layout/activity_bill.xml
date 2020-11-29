@@ -39,54 +39,14 @@
             android:rowCount="5">
 
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="245dp"
-                    android:background="@color/gray"
-                    android:onClick="getimage"
-                    >
-
-                    <ImageView
-                        android:id="@+id/my_avatar"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:adjustViewBounds="true"
-                        app:layout_collapseMode="parallax"
-                        app:layout_collapseParallaxMultiplier="0.7"
-                        app:layout_constraintBottom_toTopOf="@+id/textView"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.982"
-
-                        tools:ignore="MissingConstraints" />
-
-                </LinearLayout>
-
-            <EditText
-                android:layout_width="386dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:hint="name "
-                android:textColor="@color/black"
-                android:textColorHint="@color/gray"
-                android:textSize="18dp"
-                android:textStyle="bold"></EditText>
-
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="245dp"
                 android:background="@color/gray"
-                android:onClick="getimage3"
-                >
+                android:onClick="getimage">
 
                 <ImageView
-                    android:id="@+id/my_avatar3"
+                    android:id="@+id/my_avatar"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:adjustViewBounds="true"
@@ -103,8 +63,10 @@
 
             </LinearLayout>
 
+
             <EditText
-                android:layout_width="386dp"
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
@@ -114,50 +76,22 @@
                 android:textSize="18dp"
                 android:textStyle="bold"></EditText>
 
+            <Button
+                android:id="@+id/sharebtn"
+                android:onClick="share"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:text="SHARE"
+                app:backgroundTint="#2E6C67"
+
+                tools:ignore="OnClick"></Button>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="245dp"
                 android:background="@color/gray"
-                android:onClick="getimage1"
-                >
-
-                <ImageView
-                    android:id="@+id/my_avatar2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:adjustViewBounds="true"
-                    app:layout_collapseMode="parallax"
-                    app:layout_collapseParallaxMultiplier="0.7"
-                    app:layout_constraintBottom_toTopOf="@+id/textView"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.982"
-
-                    tools:ignore="MissingConstraints" />
-
-            </LinearLayout>
-
-            <EditText
-                android:layout_width="386dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:hint="name "
-                android:textColor="@color/black"
-                android:textColorHint="@color/gray"
-                android:textSize="18dp"
-                android:textStyle="bold"></EditText>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="245dp"
-                android:background="@color/gray"
-                android:onClick="getimage1"
-                >
+                android:onClick="getimage1">
 
                 <ImageView
                     android:id="@+id/my_avatar1"
@@ -178,7 +112,7 @@
             </LinearLayout>
 
             <EditText
-                android:layout_width="386dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
@@ -187,6 +121,100 @@
                 android:textColorHint="@color/gray"
                 android:textSize="18dp"
                 android:textStyle="bold"></EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:text="SHARE"
+                app:backgroundTint="#2E6C67"
+
+                ></Button>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:background="@color/gray"
+                android:onClick="getimage2">
+
+                <ImageView
+                    android:id="@+id/my_avatar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7"
+                    app:layout_constraintBottom_toTopOf="@+id/textView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.982"
+
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:hint="name "
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="18dp"
+                android:textStyle="bold"></EditText>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:text="SHARE"
+                app:backgroundTint="#2E6C67"
+
+                ></Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:background="@color/gray"
+                android:onClick="getimage3">
+
+                <ImageView
+                    android:id="@+id/my_avatar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7"
+                    app:layout_constraintBottom_toTopOf="@+id/textView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.982"
+
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:hint="name "
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="18dp"
+                android:textStyle="bold"></EditText>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:text="SHARE"
+                app:backgroundTint="#2E6C67"
+
+                ></Button>
         </GridLayout>
     </LinearLayout>
 
