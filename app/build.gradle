@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
      id 'com.google.gms.google-services'
+     id "org.sonarqube" version "3.1.1"
 }
 
 android {
@@ -54,4 +55,14 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     
 
+}
+
+  
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "NikhilKumarOllala_DOIT"
+    property "sonar.organization", "nikhilkumarollala"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
