@@ -2,7 +2,6 @@ package com.example.Doit;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -12,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.facebook.FacebookSdk;
@@ -34,6 +32,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import java.util.Arrays;
+
+
 public class LOGIN extends AppCompatActivity implements View.OnClickListener{
    EditText mEmail,mPassword;
    Button mLoginBtn;
@@ -68,7 +68,7 @@ public class LOGIN extends AppCompatActivity implements View.OnClickListener{
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
         }
-        //gmail code
+        //Google mail code
 //Adding buttons to the OnClickListener
         findViewById(R.id.gsignin).setOnClickListener(this);
 
@@ -207,7 +207,7 @@ public void loginButtonActivity(View view) {
         mCallbackManager.onActivityResult(requestCode, resultCode, data);
         super.onActivityResult(requestCode, resultCode, data);
 
-// Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
+
         if (requestCode == RC_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
