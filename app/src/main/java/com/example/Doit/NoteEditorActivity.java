@@ -7,11 +7,9 @@ import android.os.Bundle;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
-import androidx.appcompat.app.AppCompatActivity;
 import java.util.HashSet;
 
 public class NoteEditorActivity extends AppCompatActivity {

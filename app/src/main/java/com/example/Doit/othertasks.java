@@ -6,19 +6,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.EditText;
-
-
-
 import java.util.ArrayList;
+
 public class othertasks extends AppCompatActivity {
     private ArrayList<ExampleItem> mExampleList;
     private RecyclerView mRecyclerView;
     private ExampleAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private Button buttonInsert;
-    private EditText editTextInsert;
-    private EditText editTextRemove;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

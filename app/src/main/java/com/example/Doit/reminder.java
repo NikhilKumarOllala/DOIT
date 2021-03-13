@@ -1,7 +1,6 @@
 package com.example.Doit;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -10,9 +9,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
-
-import com.example.Doit.R;
-
 import java.util.Calendar;
 
 public class reminder extends AppCompatActivity implements View.OnClickListener {

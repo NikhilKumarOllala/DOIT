@@ -1,18 +1,13 @@
 package com.example.Doit;
 
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+
 
 
 public class settings extends AppCompatActivity {
@@ -58,7 +53,7 @@ public class settings extends AppCompatActivity {
         startActivity(ie);
     }
 
-    public void chngpass(View view) {
+    public void changepass(View view) {
         Intent ic =new Intent(this,activityprofile.class);
         startActivity(ic);
     }

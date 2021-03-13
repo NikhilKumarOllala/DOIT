@@ -4,10 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.database.DefaultDatabaseErrorHandler;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,7 +20,6 @@ import com.google.firebase.firestore.auth.User;
 
 public class activityprofile extends AppCompatActivity {
 
-    private Button editbtn;
     private FirebaseUser user;
     private DatabaseReference reference;
     private String userid;
@@ -36,10 +33,10 @@ public class activityprofile extends AppCompatActivity {
         reference = FirebaseDatabase.getInstance().getReference("Users");
         userid = user.getUid();
 
-        final TextView greetingtextview = (TextView) findViewById(R.id.greetings);
-        final TextView fullnametextview = (TextView) findViewById(R.id.nameadress);
-        final TextView emailtextview = (TextView) findViewById(R.id.emailadress);
-        final TextView phonetextview = (TextView) findViewById(R.id.phonedress);
+        final TextView greetingtextview = findViewById(R.id.greetings);
+        final TextView fullnametextview =  findViewById(R.id.nameadress);
+        final TextView emailtextview = findViewById(R.id.emailadress);
+        final TextView phonetextview =  findViewById(R.id.phonedress);
 
         reference.child(userid).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
