@@ -1,1 +1,0 @@
-         startActivity(new Intent(getApplicationContext(), MainActivity.class));
